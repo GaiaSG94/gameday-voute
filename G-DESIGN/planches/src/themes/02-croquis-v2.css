@@ -1,0 +1,59 @@
+/* ---------- Planche in the identity ---------- */
+html,body{background:#efe9dc}
+.board{color:#221c16;background:#efe9dc radial-gradient(circle at 1px 1px,rgba(34,28,22,.12) 1px,transparent 1.3px) 0 0/16px 16px}
+.plate-head .num{color:#6f6556}
+.plate-head h1{font:700 38px/1.05 "URW Gothic","Ubuntu Sans",sans-serif;text-transform:uppercase;letter-spacing:.01em;color:#221c16}
+.plate-head .why{color:#3b3228}.plate-head .why b{color:#221c16}
+.sw i{border:2px solid #221c16;border-radius:10px;box-shadow:1px -1px 0 #221c16,2px -2px 0 #221c16,3px -3px 0 #221c16,4px -4px 0 #221c16}
+.frames figcaption{color:#6f6556}
+.refs{color:#6f6556}
+.desk,.mob{box-shadow:2px -2px 0 #221c16,4px -4px 0 #221c16,6px -6px 0 #221c16,8px -8px 0 #221c16,0 30px 60px rgba(34,28,22,.18)}
+.mob{box-shadow:0 0 0 10px #221c16,2px -2px 0 10px #221c16,5px -5px 0 10px #221c16,0 30px 60px rgba(34,28,22,.2)}
+body{--c-bg:#f3f1ec;--c-bg2:#ebe8e1;--c-card:#fff;--c-text:#1d1b18;--c-mute:#6c675e;--c-mute2:#d6d2ca;--c-line:#e4e0d8;--sub-av:#221c16}
+
+/* ---------- Game identity ---------- */
+.game{--sans:"Ubuntu Sans","Nimbus Sans",Arial,sans-serif;--hand:"URW Bookman","Bookman Old Style",Georgia,serif;
+ --ink:#221c16;--mute:#6f6556;--accent:#d2553a;--pg-off:#fffdf7;--pg-key:#221c16;--ts-r:14px;--ts-bg:#fffdf7;
+ --x1:1px -1px 0 #221c16,2px -2px 0 #221c16,3px -3px 0 #221c16;
+ --x2:1px -1px 0 #221c16,2px -2px 0 #221c16,3px -3px 0 #221c16,4px -4px 0 #221c16,5px -5px 0 #221c16;
+ --g-bg:#f4efe4 radial-gradient(circle at 1px 1px,rgba(34,28,22,.1) 1px,transparent 1.3px) 0 0/14px 14px}
+.g-top{padding-top:22px}
+.wm{display:inline-block;font:700 40px/.9 "URW Gothic","Ubuntu Sans",sans-serif;letter-spacing:.02em;text-transform:uppercase;color:#fffdf7;
+ -webkit-text-stroke:1.8px #221c16;text-shadow:1px -1px 0 #221c16,2px -2px 0 #221c16,3px -3px 0 #221c16,4px -4px 0 #221c16,5px -5px 0 #221c16}
+.mob-g .wm{font-size:32px}
+.wm .u{position:relative;display:inline-block}
+.wm .u svg{position:absolute;left:50%;top:-.5em;width:.46em;transform:translateX(-30%)}
+.wm{padding-top:.2em}
+.g-brand{gap:8px}
+.g-brand .no{font-weight:700;color:#221c16;letter-spacing:.05em;font-size:12px}
+.g-brand .no i{color:#d2553a;opacity:1}
+.g-streak{background:#fffdf7;border:2px solid #221c16;border-radius:14px;padding:4px 14px 4px 5px;box-shadow:var(--x2);color:#221c16;font-weight:600;margin-top:5px}
+.g-streak b{font:700 18px/1 "URW Gothic","Ubuntu Sans",sans-serif}
+.g-rule{font:italic 400 13.5px/1.4 var(--hand);color:#221c16;background:#fffdf7;border:2px solid #221c16;border-radius:4px;padding:8px 14px 9px;
+ margin-top:10px;max-width:400px;transform:rotate(-1.2deg);box-shadow:var(--x1);position:relative}
+.g-rule::before{content:"";position:absolute;left:22%;top:-15px;width:54px;height:14px;transform:translateX(-50%) rotate(3deg);background:rgba(210,85,58,.28);border-left:1px dashed rgba(34,28,22,.3);border-right:1px dashed rgba(34,28,22,.3)}
+.mob-g .g-rule{font-size:12.5px;margin:10px 18px 0;padding:6px 10px 7px}
+.g-rule em{font-style:normal;color:#d2553a;font-weight:700}
+/* progress = a course of little blocks */
+.pgbar{gap:6px;align-items:flex-end;padding-top:6px}
+.pg{height:14px;border-radius:2px;border:2px solid #221c16;background:#fffdf7;box-shadow:var(--x1)}
+.pg.on{background:#e3d8c3 repeating-linear-gradient(135deg,transparent 0 3px,rgba(34,28,22,.28) 3px 4px)}
+.pg.now{background:#d2553a}
+.pg.key{height:20px;border-style:dashed;background:#fffdf7;box-shadow:none}
+.pg.off{border:1.5px dashed rgba(34,28,22,.45);box-shadow:none;background:transparent}
+.pgtxt{margin-top:9px}.pgtxt b{font:700 15px/1 "URW Gothic","Ubuntu Sans",sans-serif}
+.g-tray-h{font:700 12px/1 "URW Gothic","Ubuntu Sans",sans-serif;color:#221c16;letter-spacing:.12em}
+.g-tray{gap:14px 12px;padding:4px 6px 0 0}
+.mob-g .g-tray{gap:10px;padding-right:6px}
+.ts{border:2px solid #221c16;box-shadow:var(--x2);transition:transform .15s,box-shadow .15s}
+.ts:hover{transform:translate(-2px,2px);box-shadow:var(--x1)}
+.ts-hand{background:#fbe6de;border-color:#d2553a;box-shadow:1px -1px 0 #d2553a,2px -2px 0 #d2553a,3px -3px 0 #d2553a,4px -4px 0 #d2553a,5px -5px 0 #d2553a}
+.ts-locked{background:transparent;border-style:dashed;box-shadow:none;opacity:.7}
+.ts-l{font-weight:700;color:#221c16}
+.ts-hand .ts-l{color:#d2553a}
+.ts-empty{border:2px dashed #d2553a;background:repeating-linear-gradient(135deg,transparent 0 4px,rgba(210,85,58,.18) 4px 5px)}
+.g-foot{gap:8px}
+.g-foot span{display:flex;align-items:center;gap:8px}
+.g-foot svg{flex:none}
+.g-foot b{font:700 15px/1 "URW Gothic","Ubuntu Sans",sans-serif}
+.mob-g .g-foot{gap:6px}

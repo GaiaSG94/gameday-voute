@@ -1,0 +1,7 @@
+{"num":"02","ver":"V2","out":"v2","file":"03-carte-de-fin","page":"CARTE DE FIN","screen":"fin","dstate":"closed","mstate":"closed",
+ "extra_mobile":{"caption":"Mobile · état effondré · 390 × 844","state":"fell"},
+ "title":"Carte de fin — fermé ou à terre",
+ "include":["themes/02-croquis-v2.js","pages/kit.js","themes/02-croquis-v2.css","pages/kit.css"],
+ "why":"<b>Le résultat se lit dans le dessin avant de se lire dans le texte.</b> Arc fermé : la clé passe en sanguine et les maçons lèvent les bras. Arc effondré : les piédroits tiennent, les voussoirs gisent dans la poussière. Dans les deux cas, la série et le score du jour sont visibles, et un seul geste rouge poste le résultat en commentaire.",
+ "refs":"Style verrouillé : STYLE.md (Croquis V2) — états « arc fermé » et « effondré » de §7",
+ "swatches":[["#f4efe4","#221c16"],["#221c16","#f4efe4"],["#e8dfcd","#221c16"],["#d2553a","#fff"]]}

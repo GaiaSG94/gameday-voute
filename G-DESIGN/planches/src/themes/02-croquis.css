@@ -1,0 +1,21 @@
+body{--c-bg:#f3f1ec;--c-bg2:#ebe8e1;--c-card:#fff;--c-text:#1d1b18;--c-mute:#6c675e;--c-mute2:#d6d2ca;--c-line:#e4e0d8;--sub-av:#221c16}
+.game{--sans:"Ubuntu Sans","Nimbus Sans",Arial,sans-serif;--hand:"URW Bookman","Bookman Old Style",Georgia,serif;
+ --ink:#221c16;--mute:#6f6556;--accent:#d2553a;--pg-off:#e2d9c6;--pg-key:#221c16;--ts-r:18px;--ts-bg:#fff;
+ --g-bg:#f4efe4 radial-gradient(circle at 1px 1px,rgba(34,28,22,.09) 1px,transparent 1.2px) 0 0/14px 14px}
+.wm{font:700 38px/0.9 "URW Gothic","Ubuntu Sans",sans-serif;letter-spacing:-.01em;text-transform:uppercase;color:#221c16;-webkit-text-stroke:1.2px #221c16}
+.mob-g .wm{font-size:30px}
+.g-brand .no{font-weight:600;color:#221c16;letter-spacing:.04em}
+.g-streak{background:#fff;border:2px solid #221c16;border-radius:24px;padding:5px 14px 5px 6px;box-shadow:3px 3px 0 #221c16;color:#221c16;font-weight:600}
+.g-rule{font:italic 400 14px/1.4 var(--hand);color:#3b3228}
+.mob-g .g-rule{font-size:13px}
+.ts{border:2px solid #221c16;box-shadow:3px 3px 0 #221c16}
+.ts:hover{transform:translate(-1px,-2px);box-shadow:4px 5px 0 #221c16}
+.ts-hand{background:#fbe9e2;border-color:#d2553a;box-shadow:3px 3px 0 #d2553a}
+.ts-locked{background:transparent;border-style:dashed;box-shadow:none}
+.ts-l{font-weight:600;color:#221c16}
+.ts-hand .ts-l{color:#d2553a}
+.ts-empty{border-width:2px}
+.pg{height:8px;border-radius:4px;border:1.5px solid #221c16;background:#fff}
+.pg.on{background:#221c16}.pg.now{background:#d2553a}.pg.key{border-style:dashed;background:transparent}
+.g-tray-h{font-weight:700;color:#221c16}
+.g-foot b{font-size:14px}

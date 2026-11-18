@@ -1,0 +1,6 @@
+{"num":"02","ver":"V2","out":"v2","file":"04-series-classement","page":"SÉRIES & CLASSEMENT","screen":"series",
+ "title":"Séries & classement — le registre",
+ "include":["themes/02-croquis-v2.js","pages/kit.js","themes/02-croquis-v2.css","pages/kit.css"],
+ "why":"<b>Une raison de revenir demain.</b> La série est une assise de pierres, un bloc par jour (fermé, tombé, manqué). Le score du jour montre où les arcs sont tombés, en colonnes de petits blocs. Le classement des plus longues séries garde ta ligne toujours visible. Pas de karma, pas de points : seulement des jours et des pierres.",
+ "refs":"Style verrouillé : STYLE.md (Croquis V2) — composants Bloc, Progression, Picto",
+ "swatches":[["#f4efe4","#221c16"],["#221c16","#f4efe4"],["#e8dfcd","#221c16"],["#d2553a","#fff"]]}

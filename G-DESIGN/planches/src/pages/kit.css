@@ -1,0 +1,24 @@
+/* Croquis V2 kit — screen layouts */
+.scr{display:flex!important;flex-direction:column}
+.scr .row{display:flex;align-items:center;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 24px;border-radius:999px;border:2px solid #221c16;
+ font:700 15px/1 "Ubuntu Sans",sans-serif;letter-spacing:.01em;box-shadow:var(--x2);transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.btn:hover{transform:translate(-2px,2px);box-shadow:var(--x1)}
+.btn.pri{background:#d2553a;color:#fffdf7}
+.btn.sec{background:#fffdf7;color:#221c16}
+.btn.sm{height:38px;padding:0 16px;font-size:13px}
+.slab{background:#fffdf7;border:2px solid #221c16;border-radius:14px;box-shadow:var(--x2)}
+.note{background:#fffdf7;border:2px solid #221c16;border-radius:4px;box-shadow:var(--x1);position:relative;transform:rotate(-1.2deg);font:italic 400 14px/1.4 var(--hand);color:#221c16;padding:10px 14px}
+.note::before{content:"";position:absolute;left:22%;top:-15px;width:54px;height:14px;transform:rotate(3deg);background:rgba(210,85,58,.28);border-left:1px dashed rgba(34,28,22,.3);border-right:1px dashed rgba(34,28,22,.3)}
+.h-title{font:700 30px/1 "URW Gothic","Ubuntu Sans",sans-serif;text-transform:uppercase;letter-spacing:.01em;color:#fffdf7;-webkit-text-stroke:1.6px #221c16;
+ text-shadow:1px -1px 0 #221c16,2px -2px 0 #221c16,3px -3px 0 #221c16,4px -4px 0 #221c16}
+.h-title.red{color:#d2553a}
+.hero-n{font:700 52px/1 "URW Gothic","Ubuntu Sans",sans-serif;color:#fffdf7;-webkit-text-stroke:1.8px #221c16;
+ text-shadow:1px -1px 0 #221c16,2px -2px 0 #221c16,3px -3px 0 #221c16,4px -4px 0 #221c16,5px -5px 0 #221c16}
+.lbl{font:700 11px/1 "URW Gothic","Ubuntu Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#221c16}
+.mute{color:#6f6556}
+.stat{display:flex;align-items:center;gap:8px;font-size:12px;color:#6f6556}
+.stat b{font:700 15px/1 "URW Gothic","Ubuntu Sans",sans-serif;color:#221c16}
+.g-streak em{font-style:normal;color:#d2553a;font-weight:700;margin-left:4px}
+.scene{flex:1;min-height:0;width:100%;display:block}
+.scr svg.scene{height:100%;width:100%;min-height:0;overflow:hidden}

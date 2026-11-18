@@ -9,18 +9,18 @@
   const P = (d, a) => [d * Math.cos(a * Math.PI / 180), -d * Math.sin(a * Math.PI / 180)];
   const f = n => n.toFixed(2);
   const radii = st => st.key ? [r - 5, R + 12] : [r, R];
-  function pts(st) {
+  const pts = (st) => {
     const [ri, ro] = radii(st), out = [], n = 8;
     for (let k = 0; k <= n; k++) out.push(P(ri, st.a0 + (st.a1 - st.a0) * k / n));
     for (let k = n; k >= 0; k--) out.push(P(ro, st.a0 + (st.a1 - st.a0) * k / n));
     return out;
   }
-  function poly(st) { return 'M' + pts(st).map(p => f(p[0]) + ' ' + f(p[1])).join('L') + 'Z'; }
+  const poly = (st) => { return 'M' + pts(st).map(p => f(p[0]) + ' ' + f(p[1])).join('L') + 'Z'; }
   const center = st => { const [ri, ro] = radii(st); return P((ri + ro) / 2, st.m); };
   const G = { D, S, P, poly, pts, center, r, R, f };
   window.VOUTE = G;
 
-  function archSVG(id, mode, o = {}) {
+  const archSVG = (id, mode, o = {}) => {
     const placed = o.placed || D.placed, held = ('held' in o) ? o.held : D.held;
     let s = `<svg class="arch ${o.cls || ''}" viewBox="${o.vb || T.vb}" preserveAspectRatio="xMidYMid meet" aria-label="${o.label || `Arch No. ${D.arch}, ${placed.length} of 8 voussoirs set`}">`;
     s += `<defs>${T.defs(id)}</defs>` + T.back(id, G, o);
@@ -41,22 +41,22 @@
     s += (o.extra ? o.extra(id) : '') + (o.noFront ? '' : T.front(id, G, mode, o)) + `</svg>`;
     return s;
   }
-  function traySVG(st, id, state) {
+  const traySVG = (st, id, state) => {
     const c = center(st);
     return `<svg class="ts-svg" viewBox="-42 -42 84 84"><g transform="rotate(${f(st.m - 90)}) translate(${f(-c[0])} ${f(-c[1])})">`
       + T.stone(poly(st), state, st, id, G) + `</g></svg>`;
   }
-  function tray(id) {
+  const tray = (id) => {
     const items = [{ st: S[D.held], k: 'hand' }, ...D.tray.map(i => ({ st: S[i], k: 'tray' })), { st: S[4], k: 'locked' }];
     return items.map(it => `<button class="ts ts-${it.k}" ${it.k === 'locked' ? 'disabled' : ''}>`
       + (it.k === 'hand' ? `<span class="ts-svg ts-empty"></span>` : traySVG(it.st, id, it.k))
       + `<span class="ts-l">${it.k === 'hand' ? 'In hand' : it.k === 'locked' ? 'Keystone · last' : 'Voussoir'}</span></button>`).join('');
   }
-  function prog() {
+  const prog = () => {
     const pips = S.map(st => `<i class="pg ${D.placed.includes(st.i) ? 'on' : st.i === D.held ? 'now' : st.key ? 'key' : 'off'}"></i>`).join('');
     return `<div class="pgbar">${pips}</div><div class="pgtxt"><b>${D.placed.length}</b> of 8 voussoirs set</div>`;
   }
-  function game(id, mode) {
+  const game = (id, mode) => {
     return `<div class="game ${mode}">
       <div class="g-top">
         <div class="g-brand">${T.wordmark()}<span class="no">Arch No.&nbsp;${D.arch}<i>·</i>${D.date}</span></div>
@@ -80,6 +80,6 @@
 
   // Fit the whole board to the window width (planche is authored at native pixel sizes).
   const board = document.querySelector('.board');
-  function fit() { const w = board.scrollWidth; const z = Math.min(1, (window.innerWidth - 8) / w); board.style.zoom = z; }
+  const fit = () => { const w = board.scrollWidth; const z = Math.min(1, (window.innerWidth - 8) / w); board.style.zoom = z; }
   window.addEventListener('resize', fit); fit();
 })();

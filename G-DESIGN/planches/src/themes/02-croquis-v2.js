@@ -4,7 +4,7 @@ const LIGHT = [0.6, 0.8];       // light travels down-right (comes from upper-le
 const fx = n => n.toFixed(1);
 const pth = p => 'M' + p.map(q => fx(q[0]) + ' ' + fx(q[1])).join('L') + 'Z';
 // Draw a polygon as a solid block in cabinet projection, ink outlines, shaded/hatched sides.
-function solid(p, id, o = {}) {
+const solid = (p, id, o = {}) => {
   const v = o.v || V, n = p.length;
   const cx = p.reduce((s, q) => s + q[0], 0) / n, cy = p.reduce((s, q) => s + q[1], 0) / n;
   let sides = '';

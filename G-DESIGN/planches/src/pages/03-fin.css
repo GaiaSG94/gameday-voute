@@ -1,0 +1,28 @@
+.fin{padding:0}
+.fin .fi-top{display:flex;justify-content:space-between;align-items:flex-start;padding:22px 24px 0}
+.fin .fi-body{flex:1;min-height:0;display:grid;grid-template-columns:1fr 300px;gap:10px;padding:4px 22px 20px 6px}
+.fin .fi-card{display:flex;flex-direction:column;gap:14px;justify-content:center}
+.fin .fi-sub{font-size:13px;color:#6f6556;margin-top:8px}
+.fin .fi-sub b{color:#221c16}
+.fin .fi-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fin .fi-stats .slab{padding:10px 12px;display:flex;flex-direction:column;gap:6px}
+.fin .fi-stats .k{font-size:11px;color:#6f6556}
+.fin .fi-stats .v{display:flex;align-items:baseline;gap:6px;font:700 26px/1 "URW Gothic","Ubuntu Sans",sans-serif;color:#221c16}
+.fin .fi-stats .v small{font:700 12px/1 "Ubuntu Sans",sans-serif;color:#d2553a}
+.fin .fi-cm{padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.fin .fi-cm .lbl{display:flex;align-items:center;gap:6px}
+.fin .fi-cm q{font:italic 400 14px/1.4 var(--hand);color:#221c16;quotes:none;border-left:3px solid #d2553a;padding-left:10px}
+.fin .fi-cm .btn{width:100%}
+.fin .fi-next{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#6f6556}
+.fin .fi-next a{color:#221c16;font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.mob-g.fin .fi-top{padding:14px 16px 0}
+.mob-g.fin .wm{font-size:30px}
+.mob-g.fin .fi-body{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;padding:0 14px 12px;gap:6px}
+.mob-g.fin .fi-card{gap:9px}
+.mob-g.fin .h-title{font-size:25px}
+.mob-g.fin .fi-sub{margin-top:5px;font-size:12px}
+.mob-g.fin .fi-stats .slab{padding:7px 10px;gap:3px}
+.mob-g.fin .fi-stats .v{font-size:21px}
+.mob-g.fin .fi-cm{padding:9px 12px;gap:8px}
+.mob-g.fin .fi-cm q{font-size:12.5px}
+.mob-g.fin .btn{height:42px}

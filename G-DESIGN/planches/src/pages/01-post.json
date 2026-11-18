@@ -1,0 +1,6 @@
+{"num":"02","ver":"V2","out":"v2","file":"01-post","page":"POST","screen":"post",
+ "title":"Post — avant la première pierre",
+ "include":["themes/02-croquis-v2.js","pages/kit.js","themes/02-croquis-v2.css","pages/kit.css"],
+ "why":"<b>État dans le feed, avant toute interaction.</b> On voit tout de suite l’arc à construire : les piédroits sont montés, les 8 voussoirs et la clé sont livrés en tas, l’épure attend. Un seul geste est proposé, le gros bouton rouge. La communauté est déjà sur place, en chiffres comme en dessin.",
+ "refs":"Style verrouillé : STYLE.md (Croquis V2) — aucun nouvel élément de vocabulaire",
+ "swatches":[["#f4efe4","#221c16"],["#221c16","#f4efe4"],["#e8dfcd","#221c16"],["#d2553a","#fff"]]}

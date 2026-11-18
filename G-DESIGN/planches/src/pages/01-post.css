@@ -1,0 +1,15 @@
+.post .po-top{display:flex;justify-content:space-between;align-items:flex-start;padding:22px 24px 0}
+.post .wm{font-size:58px;-webkit-text-stroke:2.2px #221c16;text-shadow:1px -1px 0 #221c16,2px -2px 0 #221c16,3px -3px 0 #221c16,4px -4px 0 #221c16,5px -5px 0 #221c16,6px -6px 0 #221c16}
+.post .po-body{flex:1;min-height:0;display:grid;grid-template-columns:1fr 250px;gap:8px;padding:0 24px 22px 8px}
+.post .po-side{display:flex;flex-direction:column;justify-content:flex-end;gap:16px;padding-bottom:6px}
+.post .po-side .note{font-size:17px;padding:14px 16px;margin-bottom:6px}
+.post .po-side .note b{font-style:normal;color:#d2553a}
+.post .btn.pri{height:56px;font-size:17px;width:100%}
+.post .po-stats{display:flex;flex-direction:column;gap:8px}
+.mob-g.post .po-top{padding:16px 16px 0}
+.mob-g.post .wm{font-size:40px}
+.mob-g .g-streak em{display:none}
+.mob-g.post .po-body{grid-template-columns:1fr;grid-template-rows:1fr auto;padding:0 16px 16px}
+.mob-g.post .po-side{gap:12px}
+.mob-g.post .po-side .note{font-size:15px;margin:0 8px 4px}
+.mob-g.post .po-stats{flex-direction:row;justify-content:space-between}

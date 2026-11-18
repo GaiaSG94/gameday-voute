@@ -1,0 +1,17 @@
+body{--c-bg:#f3f1ec;--c-bg2:#ebe8e1;--c-card:#fff;--c-text:#1d1b18;--c-mute:#6c675e;--c-mute2:#d6d2ca;--c-line:#e4e0d8;--sub-av:#b8643a}
+.game{--sans:"Ubuntu Sans","Nimbus Sans",Arial,sans-serif;--serif:"P052","C059","Palatino Linotype",Georgia,serif;
+ --ink:#4a3b2a;--mute:#8a7a66;--accent:#b8643a;--pg-off:#d8cdbb;--pg-key:#b5a68f;--ts-r:16px;--ts-bg:transparent;
+ --g-bg:radial-gradient(120% 80% at 28% 18%,#fbf8f1 0%,#efe8db 55%,#e3d9c7 100%)}
+.wm{font:italic 400 34px/1 var(--serif);letter-spacing:-.01em;color:#4a3b2a}
+.mob-g .wm{font-size:28px}
+.g-brand .no{font-family:var(--sans);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase}
+.g-streak{background:rgba(255,252,246,.8);border-radius:22px;padding:6px 14px 6px 8px;box-shadow:0 6px 18px rgba(74,59,42,.12)}
+.g-rule{font:italic 400 15px/1.4 var(--serif);color:#6a5a46}
+.mob-g .g-rule{font-size:14px;padding-top:2px}
+.ts{position:relative}
+.ts::after{content:"";position:absolute;left:22%;right:22%;bottom:22px;height:8px;border-radius:50%;background:radial-gradient(closest-side,rgba(74,59,42,.28),transparent);z-index:-1}
+.mob-g .ts::after{bottom:19px}
+.ts-hand::after,.ts-locked::after{display:none}
+.ts-empty{border-color:#b8643a;background:rgba(184,100,58,.06)}
+.g-tray-h{font-family:var(--sans)}
+.pg{height:5px}

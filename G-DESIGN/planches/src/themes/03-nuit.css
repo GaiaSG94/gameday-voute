@@ -1,0 +1,22 @@
+body{--c-bg:#0e0e0f;--c-bg2:#1f1f21;--c-card:#18181a;--c-text:#ecebe8;--c-mute:#9a978f;--c-mute2:#2e2e31;--c-line:#29292c;--sub-av:#f2a93b}
+.game{--sans:"Ubuntu Sans","Nimbus Sans",Arial,sans-serif;--cond:"Nimbus Sans Narrow","Ubuntu Sans","Arial Narrow",sans-serif;
+ --ink:#efe8db;--mute:rgba(239,232,219,.58);--accent:#f2a93b;--pg-off:rgba(239,232,219,.14);--pg-key:rgba(239,232,219,.45);--ts-r:12px;--ts-bg:rgba(255,255,255,.04);
+ --g-bg:radial-gradient(60% 55% at 42% 52%,#3a2a20 0%,#21170f 45%,#120d0b 100%)}
+.wm{font:700 44px/.9 var(--cond);letter-spacing:.02em;text-transform:uppercase;color:#e9e0cf;
+ text-shadow:1px 1px 0 #a99a82,2px 2px 0 #8d7e68,3px 3px 0 #74664f,4px 4px 0 #5b4f3d,10px 12px 14px rgba(0,0,0,.6)}
+.mob-g .wm{font-size:36px}
+.g-brand .no{font:600 11px/1 "Ubuntu Sans Mono","DejaVu Sans Mono",monospace;letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
+.g-streak{background:rgba(20,15,12,.7);border:1px solid rgba(239,232,219,.14);border-radius:12px;padding:7px 12px;backdrop-filter:blur(6px)}
+.g-rule{color:rgba(239,232,219,.72);font-size:13px}
+.g-side{background:linear-gradient(rgba(14,10,8,.0),rgba(14,10,8,.0))}
+.desk-g .g-side{margin:14px 16px 16px 0;padding:16px;border-radius:16px;background:rgba(14,11,9,.72);border:1px solid rgba(239,232,219,.1);backdrop-filter:blur(8px)}
+.mob-g .g-side{margin:0 10px 10px;padding:12px;border-radius:16px;background:rgba(14,11,9,.78);border:1px solid rgba(239,232,219,.1)}
+.ts{border:1px solid rgba(239,232,219,.1)}
+.ts-hand{border-color:rgba(242,169,59,.6);background:rgba(242,169,59,.08)}
+.ts-empty{border-color:#f2a93b}
+.ts-locked{border-style:dashed}
+.pg.now{box-shadow:0 0 10px #f2a93b}
+.pgtxt,.g-foot,.g-tray-h{font-family:"Ubuntu Sans Mono","DejaVu Sans Mono",monospace;letter-spacing:.04em}
+.g-tray-h{letter-spacing:.16em}
+.g-stage svg.arch{overflow:visible}
+.g-top,.g-rule{z-index:3}
